@@ -59,7 +59,7 @@ All Credit Should Go <a href=https://t.me/TeamEvamaria>Eva Maria</a> Developers.
 
 <b>Source Code:</b> <a href=https://github.com/SL-Auto-Filter-Bot/Professor>Professor</a>
 
-Fork and Deploy your Own Bot, Don't Forget to Give the Repo a Star.
+Fork and Deploy your Own Bot, Don't Forget to Give the Repo Star.
 
 Must Give All Credits for <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰 Developer."""
 
