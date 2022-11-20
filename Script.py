@@ -53,6 +53,14 @@ class script(object):
 • /users_broadcast - Broadcast Message All Users
 • /groups_broadcast - Broadcast Message All Groups"""
 
+    SOURCECODE_TXT = """This Bot is a Open Source Project.
+
+All Credit Should Go <a href=https://t.me/TeamEvamaria>Eva Maria</a> Developers.
+
+Source Code: <a href=https://github.com/SL-Auto-Filter-Bot/Professor>Professor</a>
+Fork and Deploy your Own Bot.
+Must Give Credits for <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰 Developer."""
+
     STATUS_TXT = """★ Total Files: <code>{}</code>
 ★ Total Users: <code>{}</code>
 ★ Total Groups: <code>{}</code>
