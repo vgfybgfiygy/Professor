@@ -20,9 +20,9 @@ async def addconnection(client, message):
             cmd, group_id = message.text.split(" ", 1)
         except:
             await message.reply_text(
-                "<b>Enter in correct format!</b>\n\n"
+                "Enter in correct format!\n\n"
                 "<code>/connect group_id</code>\n\n"
-                "<i>Get your Group id by adding this bot to your group and use <code>/id</code></i>",
+                "Get your Group id by adding this bot to your group and use <code>/id</code>",
                 quote=True
             )
             return
