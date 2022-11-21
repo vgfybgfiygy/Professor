@@ -461,7 +461,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Report Bugs and Feedback', url=f'https://t.me/{SUPPORT_CHAT}')
        ], [
             InlineKeyboardButton('Status', callback_data='status'),
-            InlineKeyboardButton('Source Code', callback_data='source_code')
+            InlineKeyboardButton('Source Code', url='https://github.com/SL-Auto-Filter-Bot/Professor')
        ], [
             InlineKeyboardButton('◀️ Back', callback_data='start')
         ]]
@@ -545,16 +545,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.OWNERMODS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "source_code":
-        buttons = [[
-            InlineKeyboardButton('◀️ Back', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SOURCECODE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
