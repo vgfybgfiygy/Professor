@@ -155,7 +155,7 @@ async def get_all(client, message):
     texts = await get_filters(grp_id)
     count = await count_filters(grp_id)
     if count:
-        filterlist = f"Total number of filters in **{title}** : {count}\n\n"
+        filterlist = f"Total number of filters in **{title}** - {count}\n\n"
 
         for text in texts:
             keywords = "• `{}`\n".format(text)
@@ -219,7 +219,7 @@ async def deletefilter(client, message):
         cmd, text = message.text.split(" ", 1)
     except:
         await message.reply_text(
-            "<i>Mention the filter name which you want delete!</i>\n\n"
+            "Mention the filter name which you want delete!\n\n"
             "<code>/del filter_name</code>\n\n"
             "Use /filters to view all available filters",
             quote=True
