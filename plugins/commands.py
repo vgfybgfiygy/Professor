@@ -67,7 +67,7 @@ async def start(client, message):
         await client.send_photo(
             chat_id=message.from_user.id,
             photo=random.choice(PICS),
-            caption=f"<b>👋 හෙලෝ {message.from_user.mention},\n\nමුලින්ම මගේ Updates Channel එකට Join වෙන්න, ඊට පස්සේ ආයේ උත්සාහ කරන්න... 😇</b>",
+            caption=script.FORCESUB_TXT.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.HTML
             )
@@ -471,7 +471,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            text=f"<b>Change Your Settings for '{title}' As Your Wish ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode=enums.ParseMode.HTML,
