@@ -28,3 +28,6 @@
 • /users_broadcast - Broadcast Message All Users
 • /groups_broadcast - Broadcast Message All Groups
 ```
+
+## Deploy to Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
