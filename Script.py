@@ -7,6 +7,9 @@ class script(object):
 
 ඉතුරු හරිය මං බලා ගන්නම්.... 😎</b>"""
 
+    FORCESUB_TXT = """<b>👋 හෙලෝ {},
+මුලින්ම මගේ Updates Channel එකට Join වෙන්න, ඊට පස්සේ ආයේ උත්සාහ කරන්න... 😇</b>"""
+
     ABOUT_TXT = """★ My Name: <a href=https://t.me/{}>{}</a>
 ★ Creator: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a> 🇱🇰
 ★ Bot Server: <a href=https://www.linode.com>VPS</a>
