@@ -62,7 +62,7 @@ async def send_for_index(bot, message):
             chat_id  = int(("-100" + chat_id))
     elif message.forward_from_chat.type == enums.ChatType.CHANNEL:
         last_msg_id = message.forward_from_message_id
-        chat_id = message.forward_from_chat.username or message.forward_from_chat.id
+        chat_id = f'@{message.forward_from_chat.username}' or message.forward_from_chat.id
     else:
         return
     try:
