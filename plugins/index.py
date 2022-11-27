@@ -23,7 +23,7 @@ async def index_files(bot, query):
     if raju == 'reject':
         await query.message.delete()
         await bot.send_message(int(from_user),
-                               f"Your Submission for indexing '{chat}' has been declined by my owner.",
+                               f"Your Submission for indexing '<code>{chat}</code>' has been declined by my owner.",
                                reply_to_message_id=int(lst_msg_id))
         return
 
@@ -34,7 +34,7 @@ async def index_files(bot, query):
     await query.answer('Processing...', show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
-                               f"Your Submission for indexing '{chat}' has been accepted by my owner and will be added soon.",
+                               f"Your Submission for indexing '<code>{chat}</code>' has been accepted by my owner and will be added soon.",
                                reply_to_message_id=int(lst_msg_id))
     await msg.edit(
         "Starting Indexing...",
@@ -62,7 +62,7 @@ async def send_for_index(bot, message):
             chat_id  = int(("-100" + chat_id))
     elif message.forward_from_chat.type == enums.ChatType.CHANNEL:
         last_msg_id = message.forward_from_message_id
-        chat_id = f"@{message.forward_from_chat.username}" or f"<code>{message.forward_from_chat.id}</code>"
+        chat_id = message.forward_from_chat.username or message.forward_from_chat.id
     else:
         return
     try:
