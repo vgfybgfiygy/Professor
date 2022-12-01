@@ -39,7 +39,7 @@ class script(object):
 
     EXTRAMODS_TXT = """• /id - User ID
 • /info - User Informations
-• /imdb or /search - IMDb Movie Informations
+• /imdb or /search - IMDb Search
 • /status - Bot Database Status
 • /settings - Change Group Settings
 • /set_template - Set IMDb Template
